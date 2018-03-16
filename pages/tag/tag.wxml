@@ -1,0 +1,15 @@
+<!--pages/tag/tag.wxml-->
+<view class='all-container car-main' id='container'>
+     <view class='tag-toutu'>
+          <view class='toutu' style='background-image:url("{{taglist.data.tagImg}}")'></view>
+          <text># {{taglist.data.tagName}} #</text>
+     </view>
+      <view class='cont-list'>
+     <navigator class="item" wx:for="{{taglist.data.contents}}" url='/pages/details/details?id=3067099'>
+          <view class='text'>{{item.title}}
+               <text class='textspan'>盖饭汽车</text>
+          </view>
+          <image src='{{item.image}}' mode='aspectFill'></image>
+     </navigator>
+     </view>
+</view>

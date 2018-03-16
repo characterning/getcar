@@ -1,0 +1,38 @@
+/* pages/wenda/newquestion/newquestion.wxss */
+.quiz .picker {
+    width: 100%;
+    border: none;
+    padding: 30rpx;
+    color: #f19150;
+    font-size: 30rpx;
+}
+.section{
+     border-bottom: 1px solid #e5e8e9;
+}
+.quiz .text textarea{
+    width: 100%;
+    padding: 30rpx;
+    box-sizing: border-box;
+    line-height:40rpx;
+}
+.title{
+ border-bottom: 1px solid #e5e8e9;
+}
+.textarea{
+     font-size: 30rpx;
+     color: #666;
+}
+.wenda-btn {
+     display: inline-block;
+    font-size: 32rpx;
+    padding: 30rpx 50rpx;
+    border-radius: 50rpx;
+    position: fixed;
+    bottom: 30rpx;
+    left: 50%;
+    z-index: 112;
+    -webkit-transform: translateX(-50%);
+    background: linear-gradient(rgba(249,212,34,.9),rgba(255,238,59,.9));
+    color: #333;
+    line-height:32rpx;
+}

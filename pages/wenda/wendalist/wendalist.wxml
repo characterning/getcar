@@ -1,0 +1,21 @@
+<!--pages/wendalist/wendalist.wxml-->
+<view class='all-container car-main' id='container'>
+     <view class='wenda'>
+          <navigator wx:for="{{wendaList}}" class='line' url="/pages/wenda/wencontent/wencontent?id={{item.contentId}}">
+               <view class='line2'>
+                    <text>#{{item.questionCateName}}#</text>
+                    {{item.content}}
+               </view>
+               <view class='answer'>
+                {{item.content}}
+               </view>
+               <view class='user'>
+                    <image src='{{item.authorImage}}'></image>
+                    <text>{{item.author}}</text>
+                    <text>{{item.createTime}}</text>
+               </view>
+          </navigator>
+          <navigator class='wenda-btn' id='wendaBtn'>我要提问</navigator>
+          <view class="loading" hidden="{{loadingHidden}}">{{loadingText}}</view>
+     </view>
+</view>

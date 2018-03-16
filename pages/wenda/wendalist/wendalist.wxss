@@ -1,0 +1,58 @@
+/* pages/wendalist/wendalist.wxss */
+.wenda {
+    padding: 0 30rpx;
+}
+.wenda .line {
+    padding: 30rpx 0;
+    width: 100%;
+    display: block;
+    border-bottom: 1rpx solid #e5e8e9;
+}
+.line {
+    position: relative;
+}
+.wenda .line .line2 {
+    font-size: 34rpx;
+    line-height: 40rpx;
+    color: #333;
+    font-weight: 700;
+    -webkit-line-clamp: 2;
+}
+.wenda .line .line2 text {
+    color: #00aae2;
+}
+.wenda .line .answer {
+    margin: 30rpx 0;
+    font-size: 26rpx;
+    color: #666;
+    line-height: 40rpx;
+}
+.wenda .line .user {
+    display: flex;
+    align-items: center;
+}
+.wenda .line .user image {
+    width: 40rpx;
+    height: 40rpx;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.wenda .line .user text {
+    font-size: 24rpx;
+    color: #999;
+    margin-left: 20rpx;
+}
+.wenda-btn {
+     display: inline-block;
+    font-size: 32rpx;
+    padding: 30rpx 50rpx;
+    border-radius: 50rpx;
+    position: fixed;
+    bottom: 30rpx;
+    left: 50%;
+    z-index: 112;
+    -webkit-transform: translateX(-50%);
+    background: linear-gradient(rgba(249,212,34,.9),rgba(255,238,59,.9));
+    color: #333;
+    line-height:32rpx;
+}

@@ -1,0 +1,60 @@
+/* pages/wenda/wencontent/wencontent.wxss */
+.wenda-detail .issue-tag {
+    padding: 30rpx;
+    border-bottom: 1px solid #e5e8e9;
+}
+.wenda-detail .issue-tag .item {
+   display: inline-block;
+    color: #666;
+    background-color: #dfdfdf;
+    padding: 10rpx 20rpx;
+    font-size: 28rpx;
+    margin-right: 20rpx;
+   
+}
+.wenda-detail .title-head {
+    padding: 30rpx;
+    border-bottom:20rpx solid #ececec;
+}
+.wenda-detail .title-head .h1 {
+    color: #333;
+    font-size: 38rpx;
+    line-height: 50rpx;
+    font-weight: 700;
+}
+.wenda-detail .title-head .text {
+    padding-top: 20rpx;
+    color: #999;
+    line-height: 40rpx;
+}
+.wenda-detail .user {
+    margin-top: 30rpx;
+    font-size: 30rpx;
+    color: #999;
+}
+.wenda-detail .info {
+    padding: 30rpx;
+}
+.wenda-detail .info .text {
+    font-size: 34rpx;
+    line-height: 60rpx;
+}
+.wenda-detail .user {
+    margin-top: 30rpx;
+    font-size: 30rpx;
+    color: #999;
+}
+.wenda-btn {
+     display: inline-block;
+    font-size: 32rpx;
+    padding: 30rpx 50rpx;
+    border-radius: 50rpx;
+    position: fixed;
+    bottom: 30rpx;
+    left: 50%;
+    z-index: 112;
+    -webkit-transform: translateX(-50%);
+    background: linear-gradient(rgba(249,212,34,.9),rgba(255,238,59,.9));
+    color: #333;
+    line-height:32rpx;
+}

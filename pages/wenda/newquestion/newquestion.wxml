@@ -1,0 +1,15 @@
+<!--pages/wenda/newquestion/newquestion.wxml-->
+<view class='all-container car-main' id="container">
+<view class='quiz'>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{questionCate}}" class="section">
+    <view class="picker">
+     {{questionCate[index]}}
+    </view>
+  </picker>
+  <view class='text'>
+  <textarea bindblur="bindTextAreaBlur" placeholder="{{placeholder}}" maxlength="30" class='title' placeholder-class="textarea"/>
+   <textarea bindblur="describeAreaBlur" placeholder="{{describeplaceholder}}" maxlength="-1" placeholder-class="textarea" />
+  </view>
+</view>
+<view class='wenda-btn' id='wendaBtn' bindtap="release">发布提问</view>
+</view>

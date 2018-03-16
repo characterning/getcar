@@ -1,0 +1,60 @@
+/* pages/tag/tag.wxss */
+.tag-toutu {
+    height: 230rpx;
+    line-height: 230rpx;
+    overflow: hidden;
+    position: relative;
+}
+.tag-toutu, .toEnd {
+    text-align: center;
+}
+.tag-toutu .toutu {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    -webkit-filter: blur(20px);
+    filter: blur(4px);
+    height: 230rpx;
+}
+.tag-toutu text {
+    color: #fff;
+    text-shadow: 1px 1px 1px #333;
+    position: absolute;
+    top: 0;
+    z-index: 111;
+    width: 100%;
+    left: 0;
+}
+.cont-list{
+     margin-top: 20rpx;
+     padding: 0rpx 20rpx;
+}
+.cont-list .item {
+    display: flex;
+    justify-content: space-between;
+    padding: 20rpx 0;
+    color: #000;
+    border-bottom: 1px solid #eee; 
+}
+.cont-list .item .text {
+    display: block;
+    padding-right: 10rpx;
+    width:450rpx;
+    font-size: 36rpx;
+    letter-spacing: 3rpx;
+}
+.textspan{
+     display: block;
+     color: #999;
+     font-size: 24rpx;
+     margin-top: 30rpx;
+}
+.cont-list .item image {
+     display: block;
+    width: 180rpx;
+    height: 180rpx;
+    object-fit: cover; 
+    border-radius: 5px;
+    flex-grow: 1;
+    background-size: cover; 
+}

@@ -1,0 +1,16 @@
+<!--pages/column/column.wxml-->
+<scroll-view class='all-container' id='container'>
+     <view class='car-cont'>
+          <view class='cont-list'>
+               <navigator class='top' url='/pages/details/details?id=3067099' >
+                    <text class='text shade-mask'>{{columnList[0].title}}</text>
+                    <image lazy-load='{{lazyload}}' src='{{columnList[0].image}}' mode='aspectFill'></image>
+               </navigator>
+               <navigator class="item" wx:for="{{columnList}}" wx:if="{{index>0}}" url='/pages/details/details?id=3066921'>
+                    <view class='text'>{{item.title}}<text class='textspan'>盖饭汽车</text></view>
+                    <image lazy-load='{{lazyload}}' src='{{item.image}}' mode='aspectFill'></image>
+               </navigator>
+          </view>
+     </view>
+     <view class="loading" hidden="{{loadingHidden}}">{{loadingText}}</view>
+</scroll-view>

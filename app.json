@@ -1,0 +1,22 @@
+{
+     "pages": [
+          "pages/wenda/newquestion/newquestion",
+           "pages/wenda/wendalist/wendalist",
+          "pages/wenda/wencontent/wencontent",
+          "pages/column/column",
+          "pages/details/details",
+          "pages/tag/tag",
+          "pages/wenda",
+          "pages/index/index"
+     ],
+     "window": {
+          "backgroundTextStyle": "light",
+          "navigationBarBackgroundColor": "#fff",
+          "navigationBarTitleText": "汽车周刊",
+          "navigationBarTextStyle": "black"
+     },
+     "networkTimeout": {
+          "request": 10000,
+          "downloadFile": 10000
+     }
+}

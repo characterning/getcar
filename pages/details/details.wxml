@@ -1,0 +1,37 @@
+<import src="../../wxParse/wxParse.wxml" />
+<view class='all-container' id='container'>
+     <view class='detail-wrap' id='id="detailList"'>
+          <view class='detail-wrapper'>
+               <view class='title-wrap'>
+                    <view class='name-info'>
+                         <image src='//static.17getfun.com/2018s1/image/publish/h5/logo-32.jpg'></image>
+                         盖饭汽车
+                    </view>
+                    <text class="title">{{details.data.content.content.title}}</text>
+               </view>
+               <view id='articleCont' class="article-cont2">
+                    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+               </view>
+          </view>
+     </view>
+     <view class='car-tag'>
+          <navigator wx:for='{{selfTag}}' url='/pages/tag/tag?id={{item.id}}'>{{item.name}}</navigator>
+     </view>
+     <view id='moreArticle'>
+          <view class='more-article container'>
+               <view class='line'>
+                    <text class='title'>更多推荐</text>
+               </view>
+               <view class='card-list clearfix'>
+                    <navigator wx:for="{{detailsList}}" url='/pages/details/details?id={{item.content.id}}'>
+                         <text class='h1'>{{item.content.title}}</text>
+                         <view class='ft list-img'>
+                              <image wx:for="{{item.content.images}}" wx:for-item="itemimg" src='{{itemimg.url}}' wx:for-index="imgindex" wx:if="{{imgindex<3}}" mode="aspectFill"></image>
+                         </view>
+                         <text class='info'>盖饭汽车</text>
+                    </navigator>
+               </view>
+          </view>
+     </view>
+      <view class="loading" hidden="{{loadingHidden}}">{{loadingText}}</view>
+</view>

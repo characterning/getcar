@@ -1,0 +1,8 @@
+<swiper indicator-dots="{{indicatorDots}}"  interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+  <block wx:for="{{homePageArray.data.toutuList}}">
+    <swiper-item>
+      <image src="{{item.image}}" mode='widthFix'/>
+    </swiper-item>
+  </block>
+</swiper>
+

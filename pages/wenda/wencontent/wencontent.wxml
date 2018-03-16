@@ -1,0 +1,21 @@
+<!--pages/wenda/wencontent/wencontent.wxml-->
+<view class='all-container car-main' id='container'>
+     <view class='wenda-detail'>
+          <view class='issue-tag'>
+               <text class='item'>{{wendacontent.data.cateName}}</text>
+          </view>
+          <view class='title-head'>
+               <view class='h1'>{{wendacontent.data.title}}</view>
+               <view class='text'>{{wendacontent.data.description}}</view>
+               <view class='user'>提问者：{{wendacontent.data.userName}}</view>
+          </view>
+          <view class='info'>
+               <view class='text'>{{wendacontent.data.reply}}</view>
+               <view class='user'>
+                    <text>回答者：盖饭汽车</text>
+                    <text>5天前</text>
+               </view>
+          </view>
+     </view>
+     <navigator class='wenda-btn' id='wendaBtn'>我要提问</navigator>
+</view>
